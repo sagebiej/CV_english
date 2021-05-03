@@ -41,6 +41,16 @@ urlcolor=darkgray]{hyperref}
 \addtolength\textheight{-2in}
 \usepackage{layout}
 
+
+
+\usepackage[]{scrlayer-scrpage}  %put headsepline in brackets for horizontal headline
+\clearpairofpagestyles
+\rofoot{\color{gray}\today}
+\cfoot{\pagemark}
+%\ihead{Title description}
+
+
+
 %%% Custom sectioning}{sectsty package)
 %%% ------------------------------------------------------------
 \usepackage{sectsty}
@@ -114,11 +124,15 @@ urlcolor=darkgray]{hyperref}
 \newcommand{\CourseEntry}[3]{
 		\noindent \item{#1: \textbf{#2} \\ #3}}
 
+
+%%% to avoid letters after year in references
+
+
 %%% Begin Document
 %%% ------------------------------------------------------------
 \begin{document}
 
-\bibliographystyle{unsrtnat}
+\bibliographystyle{unsrt}
 \nobibliography{publ}
 
 %\layout
@@ -130,14 +144,14 @@ urlcolor=darkgray]{hyperref}
 % \end{wrapfigure}
 
 \MyName{Julian Sagebiel}
-\MySlogan{\vspace{-0.3in}\begin{flushright}\href{https://osm.org/go/0MZu14YIu?relation=18104}{Department of Economics}\\Swedish University of Agricultural Sciences, Uppsala \\
+\MySlogan{\vspace{-0.3in}\begin{flushright}Department of Economics\\Swedish University of Agricultural Sciences, Uppsala \\
 \href{mailto:julian.sagebiel@slu.se}{julian.sagebiel@slu.se}\\
 \href{https://www.slu.se/en/ew-cv/julian-sagebiel/}{slu.se}
 \end{flushright}}
 
 \sepspace
  \NewPart{Overview}{}
- Postdoctoral researcher at the "Decision-making and Managerial Behavior" group at the Department of Economics at the Swedish University of Agricultural Sciences with a focus on discrete choice modeling in non-market valuation.
+ I am researcher at the ``Decision-making and Managerial Behavior'' group at the Department of Economics at the Swedish University of Agricultural Sciences with a focus on discrete choice modeling in non-market valuation and consumer behavior. I am married and have three children (*2013,*2016,*2018).
 %%% Personal details
 %%% ------------------------------------------------------------
 % \NewPart{Personal Details}{}
@@ -165,17 +179,17 @@ urlcolor=darkgray]{hyperref}
 \end{itemize}}
 \sepspace
 
-\EducationEntry{Researcher}{2017-2020}{Technische Universität Berlin}
+\EducationEntry{Lecturer}{2017-2020}{Technische Universität Berlin}
 {\begin{itemize}
 \item{Environmental Economics and Consumer Behavior}
 \item{Microeconometrics and Discrete Choice Modeling}
-\item{Teaching: Study Projects for Master and Bachelor Students in Environmental Economics and Statistics}
+\item{Teaching: Courses for Master and Bachelor Students in Environmental Economics and Statistics}
 \end{itemize}}
 \sepspace
 
 \EducationEntry{Researcher}{2013-2017}{Institute for Ecological Economy Research Berlin}{\begin{itemize}\item{Transdisciplinary Research in Land and Water Management} \item{Empirical Research to Value Non-Market Goods} \item{Survey Design and Analysis}\end{itemize}}
 \sepspace
-\EducationEntry{Research Assistant}{2009-2013}{Humboldt-Universität zu Berlin}
+\EducationEntry{Researcher}{2009-2013}{Humboldt-Universität zu Berlin}
 {\begin{itemize}\item{Research on Sustainable Megacities} \item {Non-Market Valuation in the Energy Sector in Developing Countries} \item{Applied Work on the Energy Water Nexus in Indian Agriculture}\end{itemize}}
 
 
@@ -188,7 +202,7 @@ urlcolor=darkgray]{hyperref}
 Magna Cum Laude. Thesis Advisor: Markus Hanisch}
 \sepspace
 
-\EducationEntry{Diploma in Economics}{2003-2008}{Otto-von-Guericke-Universtität Magdeburg}{Title of Thesis: ``Motivstruktur des Altruismus unter Effizienzbedingung``}{Grade 1.8 (good). Research Advisor: Joachim Weimann}
+\EducationEntry{Diploma in Economics}{2003-2008}{Otto-von-Guericke-Universtität Magdeburg}{Title of Thesis: ``Motivstruktur des Altruismus unter Effizienzbedingung''}{Grade 1.8 (good). Research Advisor: Joachim Weimann}
 
 
 
@@ -198,6 +212,10 @@ Magna Cum Laude. Thesis Advisor: Markus Hanisch}
 \NewPart{Research Projects}{}
 
 \begin{etaremune}
+
+\item\FundingEntry {Swedish research council for sustainable development (FORMAS)}{\href{https://www.slu.se/en/departments/soil-environment/research/agricultural-water-management-/extreme-weather-and-resilience-in-swedish-agriculture/}{Extreme weather: Risks and solutions to increase the resilience of the Swedish agricultural production}}{Researcher}{2020-2022}
+
+\item\FundingEntry {European Union Horizon 2020}{\href{www.project-contracts20.eu}{Contracts2.0 Innovative contracts for farmers and nature}}{Researcher}{2019-2023}
 
 \item\FundingEntry {German Ministry for Education and Research}{\href{https://www.ioew.de/en/project-single/pado_processes_and_implications_of_dune_breaching_at_the_german_baltic_sea_coast/}{PADO Processes and Implications of Dune Breaching at the German Baltic Sea Coast}}{Researcher}{2016-2018}
 
@@ -210,8 +228,7 @@ Magna Cum Laude. Thesis Advisor: Markus Hanisch}
 
 \item\FundingEntry {German Ministry for Education and Research}{\href{https://www.cc-landstrad.de/en/}{CC-LandStraD Climate Change – Land Use Strategies in Germany}}{Researcher}{2010-2016}
 
-\item\FundingEntry {German Ministry for Education and Research}{\href{http://www.klimzug-radost.de/en/info}{RA:dOst Regional Adaptation Strategies for the the German Baltic Sea Coast }}{Researcher}{2009-2014}
-
+\item\FundingEntry {German Ministry for Education and Research}{\href{http://www.klimzug-radost.de/en/info}{RA:dOst Regional Adaptation Strategies for the the German Baltic Sea Coast}}{Researcher}{2009-2014}
 
 \item\FundingEntry {DZ Bank Foundation}{\href{https://www.agrar.hu-berlin.de/de/institut/departments/daoe/koopwiss/forschung/energeno}{ENERGENO - Is Electricity from Cooperatives Worth More?}}{Researcher}{2012-2015}
 
@@ -238,19 +255,21 @@ Magna Cum Laude. Thesis Advisor: Markus Hanisch}
 
 \CourseEntry{Winter Term 2020}{Lecture: Experimental methods for economics and business studies}{Swedish University of Agricultural Sciences, Uppsala}
 
-\CourseEntry{Summer Term 2020}{Study Project: Experiments to Support Decision Making in Environmental Planning part II}{Technische Universität Berlin}
+\CourseEntry{2017 to 2020}{Various single lectures within the course Landscape Economics II}{Technische Universität Berlin}
 
-\CourseEntry{Winter Term 2019/20}{Study Project: Experiments to Support Decision Making in Environmental Planning part I}{Technische Universität Berlin}
+\CourseEntry{Summer Term 2020}{Course: Experiments to Support Decision Making in Environmental Planning part II}{Technische Universität Berlin}
 
-\CourseEntry{Summer Term 2019}{Study Project: Ecosystem Services in Wetlands}{Technische Universität Berlin}
+\CourseEntry{Winter Term 2019/20}{Course: Experiments to Support Decision Making in Environmental Planning part I}{Technische Universität Berlin}
 
-\CourseEntry{Winter Term 2018/19}{Study Project: Rethinking Urban Space}{Technische Universität Berlin}
+\CourseEntry{Summer Term 2019}{Course: Ecosystem Services in Wetlands}{Technische Universität Berlin}
 
-\CourseEntry{October 2018}{Autumn School: Infrastructure Research and Policy Training (InfraTrain) -- Methodical Track Discrete Choice Experiments}{ German Institute for Economic Research (DIW), Berlin}
+\CourseEntry{Winter Term 2018/19}{Course: Rethinking Urban Space: The Demand for Green Infrastructure}{Technische Universität Berlin}
 
-\CourseEntry{Summer Term 2018}{Study Project: Applied Statistical Methods in Landscape Planning}{Technische Universität Berlin}
+\CourseEntry{October 2018}{Autumn School: Infrastructure Research and Policy Training (InfraTrain) -- Methodical Track Discrete Choice Experiments}{German Institute for Economic Research (DIW), Berlin}
 
-\CourseEntry{Winter Term 2017/18}{Study Project: The Recreational Value of Urban Green}{Technische Universität Berlin}
+\CourseEntry{Summer Term 2018}{Course: Applied Statistical Methods in Landscape Planning}{Technische Universität Berlin}
+
+\CourseEntry{Winter Term 2017/18}{Course: The Recreational Value of Urban Green}{Technische Universität Berlin}
 
 \CourseEntry{September 2017}{Summer School: Using Discrete Choice Experiments for the Economic Valuation of Ecosystem Services in Rural Landscapes}{Leibniz Centre for Agricultural Landscape Research}
 
@@ -266,6 +285,17 @@ Magna Cum Laude. Thesis Advisor: Markus Hanisch}
 
 \NewPart{Theses Supervised}{}
 \begin{etaremune}
+
+\item \ThesisEntry{Marc Ringborg}{2021}{Bachelor Thesis}{Status quo effects of information treatments in discrete choice experiments}{Swedish University of Agricultural Sciences}
+
+\item \ThesisEntry{Giovanni Slinn}{2021}{Master Thesis}{A discrete choice experiment on consumer preferences for tofu characteristics in Germany, Italy, and Sweden}{Swedish University of Agricultural Sciences}
+
+\item \ThesisEntry{Erik Furth}{2021}{Master Thesis}{Floodplain management through economic valuation:Using farmers' preferences to improve pollution-reduction schemes in Germany}{Technische Universität Berlin}
+
+\item \ThesisEntry{Polina Korneeva}{2021}{Master Thesis}{Valuation of carbon sequestration and storage under different land-use management scenarios: A case study in the regiopolis region of Rostock}{Technische Universität Berlin}
+
+\item \ThesisEntry{Ronja Schönau}{2021}{Master Thesis}{Assessing preferences for bicycle infrastructure –
+A discrete choice experiment in Seoul, South Korea}{Technische Universität Berlin}
 
 \item \ThesisEntry{Dan Xing}{2020}{Master Thesis}{Discrete choice experiments to measure the economic value of urban green }{Technische Universität Berlin}
 
@@ -291,31 +321,56 @@ Magna Cum Laude. Thesis Advisor: Markus Hanisch}
 
 \item \ThesisEntry{Maria Lindow}{2016}{Master Thesis}{The Role of Cultural Ecosystem Services for the Acceptence of the Local Population with Respect to the Water Framework Directive}{Ernst Moritz Arndt Universität Greifswald}
 
-\item \ThesisEntry{Amely Gundlach}{2016}{Master Thesis}{Overcoming the Tenant Landlord Dilemma-
+\item \ThesisEntry{Amely Gundlach}{2016}{Master Thesis}{Overcoming the Tenant Landlord Dilemma:
 An Investigation of the Impact of Cooperative Ownership on the Capitalization of Energy Efficiency}{Humboldt-Universität zu Berlin}
 
 
 \end{etaremune}
+
+\NewPart{Memberships}{}
+
+\begin{itemize}
+
+\item{\href{https://www.agrar.hu-berlin.de/de/institut/departments/daoe/koopwiss/ifg/Institut/vorstand_mitglieder}{Board Member at the \textbf{Institute for Cooperatives at Humboldt-Universität zu Berlin}}} (since 2020)
+
+\item Member of \href{http://www.envecho.com/index.html}{the \textbf{Scientific Network of Researchers using Discrete Choice Modelling in the field of environmental valuation ENVECHO}} (since 2017) 
+
+\item Member of the \href{https://sites.google.com/view/reecap}{\textbf{Research Network on Economic Experiments for the Common Agricultural Policy REECAP}} (Since 2016)
+
+\item Member of {\href{https://www.eaere.org/}{ the \textbf{European Association of Environmental and Resource Economists EAERE}}} (since 2016)
+
+\item Member of {\href{https://eaae.org/}{the \textbf{European Association of Agricultural Economists EAAE}}} (since 2014)
+
+\item Founding Member and Spokesman of the {\href{http://forschungsnetzwerk-energiegenossenschaften.de}{\textbf{Research Network Energy Cooperatives}}} (2014-2016)
+
+\end{itemize}
 
 \NewPart{Further Activities}{}
 \begin{itemize}
 
 
 
-\item \EducationEntry{\href{http://www.eaere-conferences.org/index.php?y=2020&p=226}{EAERE Conference 2021 Pre-Conference Workshop `Validity of Stated Preference Environmental Valuation using Choice Modelling'}}{2021}{Organizer}{Together with Klaus Glenk, Robert Johnston and Jürgen Meyerhoff and Vic Adamowicz}
+
+\item \EducationEntry{\href{http://www.eaere-conferences.org/index.php?y=2021&p=261}{EAERE Conference 2022 Pre-Conference Workshop `Validity of Stated \newline Preference Environmental Valuation using Choice Modelling'}}{2022}{Organizer}{Together with Vic Adamowicz, Klaus Glenk, Robert Johnston and Jürgen Meyerhoff}
+
+
+\item \EducationEntry{\href{http://fleximeets.com/eaere2020/?p=programme}{EAERE Conference 2020 Thematic Session on `Consequentiality in Stated Preference – New Insights'}}{2020}{Organizer}{Together with Malte Welling and Ewa Zawojska}
 
 \item 
-\EducationEntry{\href{https://link.springer.com/journal/10640/75/2}{Special Issue ``Spatial Dimensions of Stated Preferences''}}{2020}{Issue Editor Environmental and Resource Economics Vol. 75/2}{Together with Klaus Glenk, Robert Johnston and Jürgen Meyerhoff}
-
+\EducationEntry{\href{https://link.springer.com/journal/10640/75/2}{Special Issue ``Spatial Dimensions of Stated Preferences''}}{2020}{Guest Editor Environmental and Resource Economics Vol. 75/2}{Together with Klaus Glenk, Robert Johnston and Jürgen Meyerhoff}
 
 \item 
-\EducationEntry{\href{http://www.landschaftsoekonomie.tu-berlin.de/menue/berlin_dce_colloquium/}{Berlin Discrete Choice Colloquium}}{2016-\textcolor{white}{0000}}{Founding Member and Organizer}{Together with Jürgen Meyerhoff}
+\EducationEntry{\href{http://www.landschaftsoekonomie.tu-berlin.de/menue/berlin_dce_colloquium/}{Berlin Discrete Choice Colloquium}}{Since 2016}{Founding Member and Organizer}{Together with Jürgen Meyerhoff}
 
-\item \EducationEntry{\href{http://communications.ext.zalf.de/sites/dce/SitePages/DCE\%20Summer\%20School.aspx}{Summer School `Using Discrete Choice Experiments for the Economic Valuation of Ecosystem Services in Rural Landscapes'}}{2014-2016}{Organizer and Lecturer}{Together with Kati Haefner, Jürgen Meyerhoff and Jens Rommel}
+\item \EducationEntry{\href{http://communications.ext.zalf.de/sites/dce/SitePages/DCE\%20Summer\%20School.aspx}{Summer School `Using Discrete Choice Experiments for the \newline Economic Valuation of Ecosystem Services in Rural Landscapes'}}{2014-2016}{Organizer and Lecturer}{Together with Kati Haefner, Jürgen Meyerhoff and Jens Rommel}
 
-\item \EducationEntry{\href{http://www.eaere-conferences.org/index.php?p=60}{EAERE Conference 2017 Pre-Conference Workshop `Spatial Dimensions of Stated Preferences'}}{2016-2017}{Organizer}{Together with Klaus Glenk, Robert Johnston and Jürgen Meyerhoff}
+\item \EducationEntry{\href{http://www.eaere-conferences.org/index.php?p=60}{EAERE Conference 2017 Pre-Conference Workshop `Spatial \newline Dimensions of Stated Preferences'}}{2016-2017}{Organizer}{Together with Klaus Glenk, Robert Johnston and Jürgen Meyerhoff}
 
-\item \EducationEntry{\href{http://forschungsnetzwerk-energiegenossenschaften.de}{Research Network Energy Cooperatives}}{2014-2016}{Founding Member and Spokesman}{Together with Sarah Debor and Jakob Müller}
+
+\item \EducationEntry{\href{https://eaere2016.ethz.ch/programme/scientific-programme/thematic-sessions.html}{EAERE Conference 2016 Thematic Session on `Willingness to Pay \newline in Space: New Insights into the Spatial Dimensions of Stated \newline Preferences'}}{2016}{Organizer}{Together with Robert Johnston and Jürgen Meyerhoff}
+
+\item \EducationEntry{Occasional scientific consultancies}{Since 2012}{Survey Engine GmbH ($>100$h), International School of Management gGmbH ($>50$h), European Commission ($>40$h), Centre for Rural Development at Humboldt-Universität zu Berlin ($>30$h)}{}
+
 
 \end{itemize}
 
@@ -323,6 +378,8 @@ An Investigation of the Impact of Cooperative Ownership on the Capitalization of
 
  \NewPart{Awards}{}
  \begin{itemize}
+ 
+ 
 \item 2017 \href{https://www.agrar.hu-berlin.de/de/institut/departments/daoe/koopwiss/ifg/forschung/wissenschaftlicher-nachwuchs/raiffeisen-schulze-delitzsch-foerderpreis}{Raiffeisen - Schulze-Delitzsch-Förderpreis 2016} for the best dissertation in cooperative sciences in 2016
  \item 2017 German Academic Exchange Service (DAAD) Travel Grant for the \textit{Environmental and Resource Economics} Conference in Athens
  \item 2016 German Academic Exchange Service (DAAD) Travel Grant for the \textit{Environmental and Resource Economics} Conference in Zurich
@@ -345,13 +402,13 @@ An Investigation of the Impact of Cooperative Ownership on the Capitalization of
 Stata (Expert), R (Expert), \LaTeX (Expert),  LIMDEP (Advanced), NGENE (Expert), Latent Gold (Advanced), Biogeme (Advanced), Python (Intermediate), Bash (Intermediate), Z-Tree (Intermediate)
 
 \NewPart{Reviewer Activities}{\href{https://publons.com/a/1337890}{[Publons]}}
- Ecological Economics (8), Energy Research \& Social Science (5), 
-Environmental Science and Pollution Research (3), 
-Energy Economics (3), 
-Energy Policy (2),
+Ecological Economics (8), Energy Research \& Social Science (5), 
+Energy Economics (4), 
+Environmental Science and Pollution Research (4), Journal of Environmental Economics and Management 
+(2), 
+Energy Policy (1),
  Environmental and Resource Economics (1), European Review of Agricultural Economics (1), Journal of Behavioral and Experimental Economics (1), 
-Journal of Environmental Economics and Management 
-(2), Journal of Environmental Economics and Policy
+ Journal of Environmental Economics and Policy
 (1), Land Use Policy
 (1), Scientific Reports
 (1), Utilities Policy
@@ -369,7 +426,34 @@ Journal of Environmental Economics and Management
 %%% Papers
 %%% ------------------------------------------------------------
 
-\NewPart{Peer-Reviewed Journal Papers}{\href{https://scholar.google.de/citations?user=RzdZi_IAAAAJ&hl=de}{[statistics]}}
+\NewPart{Papers under Review}{}{}
+
+
+
+
+
+
+ 
+
+\begin{etaremune}
+
+\item \bibentry{zawojska2021}
+
+\item \bibentry{villa2021}
+
+\item \bibentry{Rommel2021}
+
+\item \bibentry{Welling2021}
+
+\item \bibentry{Giergiczny2021}
+
+\item \bibentry{rogers2021}
+
+
+\end{etaremune}
+
+
+\NewPart{Peer-Reviewed Journal Papers}{\href{https://scholar.google.de/citations?user=RzdZi_IAAAAJ&hl=de}{[citations]}}
 
 
 \begin{etaremune}
@@ -403,8 +487,8 @@ Journal of Environmental Economics and Management
 
 \NewPart{Book Chapters}{}
 \begin{etaremune}
+\item \bibentry{Elsasser2021}
 \item \bibentry{Yildiz2019}
-\item \bibentry{hirschfeld_okonomische_nodate}
 \item \bibentry{sagebielbuilding2014}
 \item \bibentry{kimmich_peri-urban_2013}
 \item \bibentry{sagebiel_governance_2013}
